@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { sceneTransitions } from '@/lib/video/animations';
 import bgTech from '../../../assets/bg-tech-law.png';
-import logoColor from '../../../assets/logo_1772286124787.png';
+import logoColor from '@assets/logo_small_wl_1777283981355.png';
 
 export const Scene1 = () => {
   return (
