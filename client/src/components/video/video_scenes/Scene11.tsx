@@ -205,7 +205,7 @@ export const Scene11 = () => {
             }
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="text-gradient-blue">Quem mexeu por último?</span>
+            <span className="text-gradient-blue">Quem da equipe analisa este processo?</span>
           </motion.span>
         </h1>
 
