@@ -48,10 +48,10 @@ export const Scene6 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '50vw',
-          height: '50vw',
-          right: '-10vw',
-          top: '-10vw',
+          width: '50cqw',
+          height: '50cqw',
+          right: '-10cqw',
+          top: '-10cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.35) 0%, rgba(4,30,66,0) 65%)',
           filter: 'blur(50px)',
@@ -63,11 +63,11 @@ export const Scene6 = () => {
       {/* Subtle grid for tech feel */}
       <div className="absolute inset-0 tech-grid opacity-50" />
 
-      <div className="relative z-10 w-full grid grid-cols-2 gap-[3vw] items-center px-[6vw]">
-        {/* LEFT: plan title + benefits */}
+      <div className="relative z-10 w-full flex flex-col gap-[5cqw] px-[6cqw]">
+        {/* TOP: plan title + benefits */}
         <div>
           <motion.div
-            className="flex items-center gap-[1vw] mb-[1.5vw]"
+            className="flex items-center gap-[2cqw] mb-[3cqw]"
             initial={{ opacity: 0, x: -20 }}
             animate={phase >= 1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.4, ease: 'circOut' }}
@@ -76,11 +76,11 @@ export const Scene6 = () => {
               src={logoSmall}
               alt="Advocates"
               className="object-contain"
-              style={{ height: '1.8vw', opacity: 0.9 }}
+              style={{ height: '4cqw', opacity: 0.9 }}
             />
             <span
               className="font-mono uppercase tracking-[0.3em] text-[#9B8659]"
-              style={{ fontSize: '0.95vw' }}
+              style={{ fontSize: '2.4cqw' }}
             >
               Apresentando
             </span>
@@ -88,7 +88,7 @@ export const Scene6 = () => {
 
           <motion.h2
             className="font-display font-black text-white leading-[0.95] tracking-tight"
-            style={{ fontSize: '7.5vw' }}
+            style={{ fontSize: '14cqw' }}
             initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
             animate={
               phase >= 1
@@ -101,8 +101,8 @@ export const Scene6 = () => {
           </motion.h2>
 
           <motion.p
-            className="font-display text-[#94A3B8] mt-[1vw]"
-            style={{ fontSize: '1.5vw', maxWidth: '40vw' }}
+            className="font-display text-[#94A3B8] mt-[2.5cqw]"
+            style={{ fontSize: '3.6cqw' }}
             initial={{ opacity: 0, y: 12 }}
             animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
             transition={{ duration: 0.5, ease: 'circOut' }}
@@ -113,11 +113,11 @@ export const Scene6 = () => {
           </motion.p>
 
           {/* Benefits list */}
-          <ul className="mt-[2.5vw] space-y-[1vw]">
+          <ul className="mt-[4cqw] space-y-[2cqw]">
             {BENEFITS.map((b, i) => (
               <motion.li
                 key={i}
-                className="flex items-center gap-[1vw]"
+                className="flex items-center gap-[2.5cqw]"
                 initial={{ opacity: 0, x: -20 }}
                 animate={
                   phase >= 3
@@ -131,18 +131,18 @@ export const Scene6 = () => {
                 }}
               >
                 <span
-                  className="flex items-center justify-center rounded-full border border-[#9B8659]/60 bg-[#9B8659]/15"
-                  style={{ width: '2vw', height: '2vw' }}
+                  className="flex items-center justify-center rounded-full border border-[#9B8659]/60 bg-[#9B8659]/15 shrink-0"
+                  style={{ width: '5cqw', height: '5cqw' }}
                 >
                   <Check
                     className="text-[#9B8659]"
                     strokeWidth={3}
-                    style={{ width: '1.1vw', height: '1.1vw' }}
+                    style={{ width: '2.8cqw', height: '2.8cqw' }}
                   />
                 </span>
                 <span
                   className="font-display text-white"
-                  style={{ fontSize: '1.5vw' }}
+                  style={{ fontSize: '3.6cqw' }}
                 >
                   {b}
                 </span>
@@ -151,11 +151,11 @@ export const Scene6 = () => {
           </ul>
         </div>
 
-        {/* RIGHT: price card */}
+        {/* BOTTOM: price card */}
         <div className="flex justify-center">
           <motion.div
-            className="glow-box rounded-[2vw] relative overflow-hidden"
-            style={{ padding: '3vw 3.5vw', minWidth: '32vw' }}
+            className="glow-box rounded-[4cqw] relative overflow-hidden w-full"
+            style={{ padding: '6cqw 5cqw' }}
             initial={{ opacity: 0, scale: 0.85, y: 30 }}
             animate={
               phase >= 2
@@ -168,10 +168,10 @@ export const Scene6 = () => {
             <motion.div
               className="absolute rounded-full"
               style={{
-                width: '20vw',
-                height: '20vw',
-                top: '-8vw',
-                left: '-6vw',
+                width: '20cqw',
+                height: '20cqw',
+                top: '-8cqw',
+                left: '-6cqw',
                 background:
                   'radial-gradient(circle, rgba(59,130,246,0.45) 0%, rgba(0,0,0,0) 70%)',
                 filter: 'blur(40px)',
@@ -182,10 +182,10 @@ export const Scene6 = () => {
             <motion.div
               className="absolute rounded-full"
               style={{
-                width: '18vw',
-                height: '18vw',
-                bottom: '-6vw',
-                right: '-5vw',
+                width: '18cqw',
+                height: '18cqw',
+                bottom: '-6cqw',
+                right: '-5cqw',
                 background:
                   'radial-gradient(circle, rgba(155,134,89,0.45) 0%, rgba(0,0,0,0) 70%)',
                 filter: 'blur(40px)',
@@ -197,19 +197,19 @@ export const Scene6 = () => {
             <div className="relative z-10 text-center">
               <div
                 className="font-mono uppercase tracking-[0.35em] text-[#94A3B8]"
-                style={{ fontSize: '0.95vw' }}
+                style={{ fontSize: '2.4cqw' }}
               >
                 Plano Associado
               </div>
               <div
-                className="font-display font-black text-white leading-[0.9] mt-[0.8vw]"
-                style={{ fontSize: '8vw' }}
+                className="font-display font-black text-white leading-[0.9] mt-[1.5cqw]"
+                style={{ fontSize: '18cqw' }}
               >
                 <span className="text-gradient-gold">R$ 0</span>
               </div>
               <div
-                className="font-display text-white/80 -mt-[0.5vw]"
-                style={{ fontSize: '1.4vw' }}
+                className="font-display text-white/80 mt-[0.5cqw]"
+                style={{ fontSize: '3.4cqw' }}
               >
                 sem mensalidade
               </div>
@@ -217,14 +217,14 @@ export const Scene6 = () => {
               {/* Pulsing divider */}
               <motion.div
                 className="bg-gradient-to-r from-transparent via-[#9B8659] to-transparent mx-auto"
-                style={{ height: '0.12vw', width: '70%', marginTop: '2vw', marginBottom: '1.5vw' }}
+                style={{ height: '0.4cqw', width: '70%', marginTop: '3.5cqw', marginBottom: '3cqw' }}
                 animate={{ opacity: [0.4, 1, 0.4] }}
                 transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
               />
 
               <motion.div
                 className="font-display text-white"
-                style={{ fontSize: '1.4vw' }}
+                style={{ fontSize: '3.4cqw' }}
                 animate={
                   phase >= 4
                     ? { scale: [1, 1.04, 1] }

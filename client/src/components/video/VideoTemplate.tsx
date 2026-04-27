@@ -45,11 +45,16 @@ export default function VideoTemplate() {
 
   return (
     <div
-      className="w-full h-screen overflow-hidden relative bg-[#020617] flex items-center justify-center"
-      style={{ aspectRatio: '16 / 9' }}
+      className="w-screen h-screen overflow-hidden relative bg-black flex items-center justify-center"
     >
       <div
-        className="w-full h-full overflow-hidden relative bg-[#020617]"
+        className="overflow-hidden relative bg-[#020617] shadow-2xl"
+        style={{
+          aspectRatio: '9 / 16',
+          height: 'min(100vh, calc(100vw * 16 / 9))',
+          width: 'min(100vw, calc(100vh * 9 / 16))',
+          containerType: 'size',
+        }}
       >
         <AnimatePresence initial={false} mode="sync">
           {currentScene === 0 && <Scene0 key="scene0" />}

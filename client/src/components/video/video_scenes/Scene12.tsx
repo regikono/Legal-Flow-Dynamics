@@ -73,10 +73,10 @@ export const Scene12 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '50vw',
-          height: '50vw',
-          left: '-10vw',
-          top: '-12vw',
+          width: '50cqw',
+          height: '50cqw',
+          left: '-10cqw',
+          top: '-12cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.32) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
@@ -87,10 +87,10 @@ export const Scene12 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '45vw',
-          height: '45vw',
-          right: '-10vw',
-          bottom: '-12vw',
+          width: '45cqw',
+          height: '45cqw',
+          right: '-10cqw',
+          bottom: '-12cqw',
           background:
             'radial-gradient(circle, rgba(59,130,246,0.30) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
@@ -102,49 +102,49 @@ export const Scene12 = () => {
       <div className="absolute inset-0 tech-grid opacity-40" />
 
       {/* HEADER */}
-      <div className="relative z-10 px-[4vw] pt-[2.2vw]">
+      <div className="relative z-10 px-[5cqw] pt-[5cqw]">
         <motion.div
-          className="flex items-center justify-between"
+          className="flex items-center justify-between mb-[2cqw]"
           initial={{ opacity: 0, y: -16 }}
           animate={phase >= 1 ? { opacity: 1, y: 0 } : { opacity: 0, y: -16 }}
           transition={{ duration: 0.45, ease: 'circOut' }}
         >
-          <div className="flex items-center gap-[1vw]">
+          <div className="flex items-center gap-[2cqw]">
             <img
               src={logoSmall}
               alt="Advocates"
               className="object-contain"
-              style={{ height: '1.8vw', opacity: 0.9 }}
+              style={{ height: '3.6cqw', opacity: 0.9 }}
             />
             <span
               className="font-mono uppercase tracking-[0.3em] text-[#9B8659]"
-              style={{ fontSize: '0.95vw' }}
+              style={{ fontSize: '2.1cqw' }}
             >
-              Kanban dos processos
+              Kanban
             </span>
           </div>
           <motion.div
-            className="flex items-center gap-[0.6vw]"
+            className="flex items-center gap-[1.2cqw]"
             animate={{ opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
           >
             <span
               className="bg-[#10B981] rounded-full"
-              style={{ width: '0.55vw', height: '0.55vw' }}
+              style={{ width: '1.2cqw', height: '1.2cqw' }}
             />
             <span
               className="font-mono uppercase tracking-[0.25em] text-[#10B981]"
-              style={{ fontSize: '0.8vw' }}
+              style={{ fontSize: '1.8cqw' }}
             >
-              equipe ao vivo
+              ao vivo
             </span>
           </motion.div>
         </motion.div>
 
         {/* Hook headline */}
         <h2
-          className="font-display font-black text-white leading-[1] tracking-tight mt-[1.2vw]"
-          style={{ fontSize: '4.2vw' }}
+          className="font-display font-black text-white leading-[1] tracking-tight mt-[2cqw]"
+          style={{ fontSize: '8.6cqw' }}
         >
           <motion.span
             className="inline-block"
@@ -186,10 +186,10 @@ export const Scene12 = () => {
       </div>
 
       {/* KANBAN BOARD */}
-      <div className="relative z-10 flex-1 px-[4vw] pb-[2vw] pt-[1.5vw]">
+      <div className="relative z-10 flex-1 px-[5cqw] pb-[5cqw] pt-[3cqw]">
         <motion.div
-          className="glow-box rounded-[1.4vw] relative overflow-hidden h-full"
-          style={{ padding: '1.6vw' }}
+          className="glow-box rounded-[3cqw] relative overflow-hidden h-full"
+          style={{ padding: '3cqw' }}
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={
             phase >= 1
@@ -204,14 +204,14 @@ export const Scene12 = () => {
               key={a.initials}
               className="absolute flex items-center justify-center rounded-full font-display font-bold text-white border-2 z-20"
               style={{
-                width: '3vw',
-                height: '3vw',
+                width: '7cqw',
+                height: '7cqw',
                 left: a.x,
                 top: a.y,
                 transform: 'translate(-50%, -50%)',
                 background: `${a.color}33`,
                 borderColor: a.color,
-                fontSize: '1vw',
+                fontSize: '2.4cqw',
                 boxShadow: `0 0 20px ${a.color}80`,
               }}
               initial={{ opacity: 0, scale: 0.4 }}
@@ -272,15 +272,15 @@ export const Scene12 = () => {
             })}
           </svg>
 
-          {/* Columns */}
-          <div className="relative grid grid-cols-4 gap-[1vw] h-full z-0">
+          {/* Columns — 2x2 grid for portrait */}
+          <div className="relative grid grid-cols-2 grid-rows-2 gap-[1.6cqw] h-full z-0">
             {COLUMNS.map((col, ci) => (
               <motion.div
                 key={col.title}
-                className="rounded-[0.9vw] border border-white/10 relative overflow-hidden"
+                className="rounded-[1.6cqw] border border-white/10 relative overflow-hidden"
                 style={{
                   background: `linear-gradient(180deg, ${col.accent} 0%, rgba(2,6,23,0.6) 100%)`,
-                  padding: '0.9vw 0.8vw',
+                  padding: '1.6cqw 1.4cqw',
                 }}
                 initial={{ opacity: 0, y: 24 }}
                 animate={
@@ -295,22 +295,22 @@ export const Scene12 = () => {
                 }}
               >
                 {/* Column header */}
-                <div className="flex items-center justify-between mb-[0.8vw]">
-                  <div className="flex items-center gap-[0.5vw]">
+                <div className="flex items-center justify-between mb-[1.6cqw]">
+                  <div className="flex items-center gap-[1cqw]">
                     <span
                       className="rounded-full"
-                      style={{ background: col.color, width: '0.55vw', height: '0.55vw' }}
+                      style={{ background: col.color, width: '1.2cqw', height: '1.2cqw' }}
                     />
                     <span
                       className="font-mono uppercase tracking-[0.2em] text-white/85"
-                      style={{ fontSize: '0.78vw' }}
+                      style={{ fontSize: '1.7cqw' }}
                     >
                       {col.title}
                     </span>
                   </div>
                   <span
                     className="font-mono text-white/50"
-                    style={{ fontSize: '0.7vw' }}
+                    style={{ fontSize: '1.6cqw' }}
                   >
                     {CARDS.filter((c) => (phase >= 4 && c.id === 'c2' ? 2 : c.col) === ci).length}
                   </span>
@@ -320,11 +320,11 @@ export const Scene12 = () => {
                 <motion.div
                   className="absolute left-0 right-0"
                   style={{
-                    height: '0.15vw',
+                    height: '0.3cqw',
                     background: `linear-gradient(90deg, transparent 0%, ${col.color} 50%, transparent 100%)`,
                     opacity: 0.55,
                   }}
-                  animate={{ top: ['12%', '92%', '12%'] }}
+                  animate={{ top: ['18%', '88%', '18%'] }}
                   transition={{
                     duration: 3.4 + ci * 0.4,
                     repeat: Infinity,
@@ -335,13 +335,14 @@ export const Scene12 = () => {
             ))}
           </div>
 
-          {/* Cards layer (absolute over columns) */}
+          {/* Cards layer (absolute over columns - 2x2 grid) */}
           {CARDS.map((card, i) => {
+            // 2x2 layout: col 0/1 → top row, col 2/3 → bottom row
             const positions = [
-              { left: '0.8%', top: '6.5vw' },
-              { left: '25.8%', top: '6.5vw' },
-              { left: '50.8%', top: '6.5vw' },
-              { left: '75.8%', top: '6.5vw' },
+              { left: '2%', top: '7%' },
+              { left: '52%', top: '7%' },
+              { left: '2%', top: '57%' },
+              { left: '52%', top: '57%' },
             ];
             // Card c2 (Recurso cível) animates from col 1 -> col 2 at phase 4
             const targetCol =
@@ -351,10 +352,10 @@ export const Scene12 = () => {
             return (
               <motion.div
                 key={card.id}
-                className="absolute rounded-[0.7vw] border border-white/15 bg-[#020617]/92 backdrop-blur-sm shadow-2xl z-[5]"
+                className="absolute rounded-[1.4cqw] border border-white/15 bg-[#020617]/92 backdrop-blur-sm shadow-2xl z-[5]"
                 style={{
-                  width: '23%',
-                  padding: '0.8vw',
+                  width: '46%',
+                  padding: '1.6cqw',
                 }}
                 initial={{ opacity: 0, scale: 0.85, left: positions[card.col].left, top: positions[card.col].top }}
                 animate={
@@ -375,22 +376,22 @@ export const Scene12 = () => {
                 }}
               >
                 {/* Code chip */}
-                <div className="flex items-center justify-between mb-[0.4vw]">
+                <div className="flex items-center justify-between mb-[0.8cqw]">
                   <span
                     className="font-mono uppercase tracking-[0.18em] text-[#9B8659]"
-                    style={{ fontSize: '0.6vw' }}
+                    style={{ fontSize: '1.3cqw' }}
                   >
                     {card.code}
                   </span>
-                  <div className="flex items-center gap-[0.25vw]">
+                  <div className="flex items-center gap-[0.5cqw]">
                     <FileText
                       className="text-white/60"
                       strokeWidth={1.8}
-                      style={{ width: '0.7vw', height: '0.7vw' }}
+                      style={{ width: '1.5cqw', height: '1.5cqw' }}
                     />
                     <span
                       className="font-mono text-white/60"
-                      style={{ fontSize: '0.6vw' }}
+                      style={{ fontSize: '1.3cqw' }}
                     >
                       {card.docs}
                     </span>
@@ -400,15 +401,15 @@ export const Scene12 = () => {
                 {/* Title */}
                 <div
                   className="font-display font-semibold text-white leading-[1.15]"
-                  style={{ fontSize: '0.85vw' }}
+                  style={{ fontSize: '1.85cqw' }}
                 >
                   {card.title}
                 </div>
 
                 {/* Mini progress bar */}
                 <motion.div
-                  className="mt-[0.6vw] rounded-full overflow-hidden bg-white/10"
-                  style={{ height: '0.18vw' }}
+                  className="mt-[1.2cqw] rounded-full overflow-hidden bg-white/10"
+                  style={{ height: '0.4cqw' }}
                 >
                   <motion.div
                     className="h-full"
@@ -433,8 +434,8 @@ export const Scene12 = () => {
                 </motion.div>
 
                 {/* Avatars on card */}
-                <div className="flex items-center justify-between mt-[0.6vw]">
-                  <div className="flex -space-x-[0.35vw]">
+                <div className="flex items-center justify-between mt-[1.2cqw]">
+                  <div className="flex -space-x-[0.7cqw]">
                     {card.initials.map((ini, k) => {
                       const av = AVATARS.find((a) => a.initials === ini);
                       return (
@@ -442,10 +443,10 @@ export const Scene12 = () => {
                           key={k}
                           className="flex items-center justify-center rounded-full border border-[#020617] font-display font-bold text-white"
                           style={{
-                            width: '1.1vw',
-                            height: '1.1vw',
+                            width: '2.4cqw',
+                            height: '2.4cqw',
                             background: av ? av.color : '#3B82F6',
-                            fontSize: '0.55vw',
+                            fontSize: '1.15cqw',
                           }}
                         >
                           {ini}
@@ -457,7 +458,7 @@ export const Scene12 = () => {
                   {card.id === 'c2' && phase >= 4 && (
                     <motion.span
                       className="rounded-full bg-[#10B981]"
-                      style={{ width: '0.4vw', height: '0.4vw' }}
+                      style={{ width: '0.9cqw', height: '0.9cqw' }}
                       animate={{ opacity: [0.4, 1, 0.4], scale: [1, 1.6, 1] }}
                       transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
                     />
@@ -469,11 +470,12 @@ export const Scene12 = () => {
 
           {/* Shared document base banner - the headline message */}
           <motion.div
-            className="absolute left-1/2 z-30 flex items-center gap-[0.9vw] rounded-full border border-[#9B8659]/60 bg-[#020617]/85 backdrop-blur-md"
+            className="absolute left-1/2 z-30 flex items-center gap-[1.4cqw] rounded-full border border-[#9B8659]/60 bg-[#020617]/85 backdrop-blur-md"
             style={{
-              padding: '0.8vw 1.6vw',
-              bottom: '1.3vw',
+              padding: '1.4cqw 2.4cqw',
+              bottom: '2cqw',
               transform: 'translateX(-50%)',
+              maxWidth: '88%',
             }}
             initial={{ opacity: 0, scale: 0.85, y: 20 }}
             animate={
@@ -492,27 +494,27 @@ export const Scene12 = () => {
             }
           >
             <Layers
-              className="text-[#9B8659]"
+              className="text-[#9B8659] shrink-0"
               strokeWidth={2}
-              style={{ width: '1.2vw', height: '1.2vw' }}
+              style={{ width: '2.6cqw', height: '2.6cqw' }}
             />
             <span
-              className="font-display font-bold text-white"
-              style={{ fontSize: '1.1vw' }}
+              className="font-display font-bold text-white text-center leading-[1.2]"
+              style={{ fontSize: '2.1cqw' }}
             >
-              O time acessa a{' '}
-              <span className="text-gradient-gold">mesma base documental</span>
+              Mesma{' '}
+              <span className="text-gradient-gold">base documental</span>
             </span>
             <Users
-              className="text-[#3B82F6]"
+              className="text-[#3B82F6] shrink-0"
               strokeWidth={2}
-              style={{ width: '1.2vw', height: '1.2vw' }}
+              style={{ width: '2.6cqw', height: '2.6cqw' }}
             />
           </motion.div>
 
           {/* Final closing pulse ring around the whole board */}
           <motion.div
-            className="absolute inset-0 rounded-[1.4vw] pointer-events-none"
+            className="absolute inset-0 rounded-[1.4cqw] pointer-events-none"
             style={{
               boxShadow: '0 0 0 0 rgba(155,134,89,0.6)',
             }}
@@ -521,7 +523,7 @@ export const Scene12 = () => {
                 ? {
                     boxShadow: [
                       '0 0 0 0 rgba(155,134,89,0.6)',
-                      '0 0 0 1.2vw rgba(155,134,89,0)',
+                      '0 0 0 1.2cqw rgba(155,134,89,0)',
                       '0 0 0 0 rgba(155,134,89,0)',
                     ],
                   }

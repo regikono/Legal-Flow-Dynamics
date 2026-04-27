@@ -49,13 +49,13 @@ export const Scene11 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '60vw',
-          height: '60vw',
+          width: '60cqw',
+          height: '60cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.40) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
-          left: '-15vw',
-          top: '-10vw',
+          left: '-15cqw',
+          top: '-10cqw',
         }}
         animate={{ x: [0, 40, 0], y: [0, 25, 0], scale: [1, 1.12, 1] }}
         transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
@@ -63,13 +63,13 @@ export const Scene11 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '55vw',
-          height: '55vw',
+          width: '55cqw',
+          height: '55cqw',
           background:
             'radial-gradient(circle, rgba(239,68,68,0.18) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(70px)',
-          right: '-15vw',
-          bottom: '-15vw',
+          right: '-15cqw',
+          bottom: '-15cqw',
         }}
         animate={{ x: [0, -30, 0], y: [0, -25, 0], scale: [1, 1.1, 1] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
@@ -79,15 +79,15 @@ export const Scene11 = () => {
 
       {/* Diagonal slash lines */}
       <motion.div
-        className="absolute h-[0.18vw] bg-[#9B8659]/80 origin-left"
-        style={{ width: '70vw', top: '14%', left: '-10%', transform: 'rotate(-6deg)' }}
+        className="absolute h-[0.18cqw] bg-[#9B8659]/80 origin-left"
+        style={{ width: '70cqw', top: '14%', left: '-10%', transform: 'rotate(-6deg)' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 1 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       />
       <motion.div
-        className="absolute h-[0.18vw] bg-[#3B82F6]/80 origin-right"
-        style={{ width: '70vw', bottom: '14%', right: '-10%', transform: 'rotate(-6deg)' }}
+        className="absolute h-[0.18cqw] bg-[#3B82F6]/80 origin-right"
+        style={{ width: '70cqw', bottom: '14%', right: '-10%', transform: 'rotate(-6deg)' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 1 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.45, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
@@ -97,10 +97,10 @@ export const Scene11 = () => {
       {SCATTER.map((s, i) => (
         <motion.div
           key={i}
-          className="absolute flex items-center justify-center rounded-[1vw] border border-[#9B8659]/30 bg-[#020617]/70 backdrop-blur-sm"
+          className="absolute flex items-center justify-center rounded-[1cqw] border border-[#9B8659]/30 bg-[#020617]/70 backdrop-blur-sm"
           style={{
-            width: '4.5vw',
-            height: '4.5vw',
+            width: '4.5cqw',
+            height: '4.5cqw',
             left: s.x,
             top: s.y,
             transform: 'translate(-50%, -50%)',
@@ -130,16 +130,16 @@ export const Scene11 = () => {
           <s.Icon
             className="text-[#9B8659]"
             strokeWidth={1.6}
-            style={{ width: '2.2vw', height: '2.2vw' }}
+            style={{ width: '2.2cqw', height: '2.2cqw' }}
           />
         </motion.div>
       ))}
 
-      <div className="relative z-10 w-full text-center px-[4vw]">
+      <div className="relative z-10 w-full text-center px-[4cqw]">
         {/* PARE badge */}
         <motion.div
-          className="inline-flex items-center justify-center gap-[1vw] mb-[2vw] rounded-full border-2 border-[#9B8659] bg-[#9B8659]/20"
-          style={{ padding: '0.8vw 2vw' }}
+          className="inline-flex items-center justify-center gap-[1cqw] mb-[2cqw] rounded-full border-2 border-[#9B8659] bg-[#9B8659]/20"
+          style={{ padding: '0.8cqw 2cqw' }}
           initial={{ opacity: 0, scale: 0.7, y: -20 }}
           animate={
             phase >= 1
@@ -156,20 +156,20 @@ export const Scene11 = () => {
               : { duration: 0.3 }
           }
         >
-          <AlertTriangle className="text-[#9B8659]" strokeWidth={2.5} style={{ width: '1.4vw', height: '1.4vw' }} />
+          <AlertTriangle className="text-[#9B8659]" strokeWidth={2.5} style={{ width: '1.4cqw', height: '1.4cqw' }} />
           <span
             className="font-mono uppercase tracking-[0.4em] text-[#9B8659] font-bold"
-            style={{ fontSize: '1.05vw' }}
+            style={{ fontSize: '1.05cqw' }}
           >
             Atenção, equipe jurídica
           </span>
-          <AlertTriangle className="text-[#9B8659]" strokeWidth={2.5} style={{ width: '1.4vw', height: '1.4vw' }} />
+          <AlertTriangle className="text-[#9B8659]" strokeWidth={2.5} style={{ width: '1.4cqw', height: '1.4cqw' }} />
         </motion.div>
 
         {/* Hook headline */}
         <h1
           className="font-display font-black text-white leading-[1] tracking-tight"
-          style={{ fontSize: '6.2vw' }}
+          style={{ fontSize: '6.2cqw' }}
         >
           <motion.span
             className="block"
@@ -211,8 +211,8 @@ export const Scene11 = () => {
 
         {/* Sub-line */}
         <motion.p
-          className="font-display text-[#94A3B8] mt-[2vw]"
-          style={{ fontSize: '1.7vw' }}
+          className="font-display text-[#94A3B8] mt-[2cqw]"
+          style={{ fontSize: '1.7cqw' }}
           initial={{ opacity: 0, y: 16 }}
           animate={
             phase >= 5

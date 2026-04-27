@@ -47,13 +47,13 @@ export const Scene16 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '60vw',
-          height: '60vw',
+          width: '60cqw',
+          height: '60cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.42) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
-          left: '-15vw',
-          top: '-10vw',
+          left: '-15cqw',
+          top: '-10cqw',
         }}
         animate={{ x: [0, 30, 0], y: [0, 20, 0], scale: [1, 1.08, 1] }}
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
@@ -61,13 +61,13 @@ export const Scene16 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '55vw',
-          height: '55vw',
+          width: '55cqw',
+          height: '55cqw',
           background:
             'radial-gradient(circle, rgba(59,130,246,0.30) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
-          right: '-10vw',
-          bottom: '-10vw',
+          right: '-10cqw',
+          bottom: '-10cqw',
         }}
         animate={{ x: [0, -25, 0], y: [0, -20, 0], scale: [1, 1.1, 1] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
@@ -78,14 +78,14 @@ export const Scene16 = () => {
       {/* Top + bottom accent lines */}
       <motion.div
         className="absolute bg-gradient-to-r from-transparent via-[#9B8659] to-transparent origin-center"
-        style={{ height: '0.12vw', width: '60vw', top: '14%' }}
+        style={{ height: '0.12cqw', width: '60cqw', top: '14%' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 0.85 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       />
       <motion.div
         className="absolute bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent origin-center"
-        style={{ height: '0.12vw', width: '60vw', bottom: '14%' }}
+        style={{ height: '0.12cqw', width: '60cqw', bottom: '14%' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 0.6 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
@@ -95,8 +95,8 @@ export const Scene16 = () => {
       <motion.div
         className="absolute rounded-full pointer-events-none"
         style={{
-          width: '22vw',
-          height: '22vw',
+          width: '22cqw',
+          height: '22cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.55) 0%, rgba(155,134,89,0) 70%)',
           filter: 'blur(20px)',
@@ -108,10 +108,10 @@ export const Scene16 = () => {
         transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <div className="relative z-10 w-full text-center px-[5vw]">
+      <div className="relative z-10 w-full text-center px-[5cqw]">
         {/* Lupa lockup: magnifying icon + Advocates logo, centered */}
         <motion.div
-          className="flex items-center justify-center gap-[1.4vw] mb-[1.6vw]"
+          className="flex items-center justify-center gap-[1.4cqw] mb-[1.6cqw]"
           initial={{ opacity: 0, scale: 0.7, y: -10 }}
           animate={
             phase >= 1
@@ -123,8 +123,8 @@ export const Scene16 = () => {
           <motion.div
             className="flex items-center justify-center rounded-full bg-[#9B8659] border-2 border-white/20"
             style={{
-              width: '5vw',
-              height: '5vw',
+              width: '5cqw',
+              height: '5cqw',
               boxShadow: '0 0 30px rgba(155,134,89,0.85)',
             }}
             animate={
@@ -140,14 +140,14 @@ export const Scene16 = () => {
             <Search
               className="text-white"
               strokeWidth={2.6}
-              style={{ width: '2.6vw', height: '2.6vw' }}
+              style={{ width: '2.6cqw', height: '2.6cqw' }}
             />
           </motion.div>
           <motion.img
             src={logoW}
             alt="Advocates"
             className="object-contain drop-shadow-2xl"
-            style={{ height: '4vw' }}
+            style={{ height: '4cqw' }}
             animate={
               phase >= 2
                 ? { y: [0, -3, 0] }
@@ -159,8 +159,8 @@ export const Scene16 = () => {
 
         {/* Eyebrow */}
         <motion.div
-          className="inline-flex items-center justify-center gap-[0.8vw] mb-[1.4vw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
-          style={{ padding: '0.55vw 1.3vw' }}
+          className="inline-flex items-center justify-center gap-[0.8cqw] mb-[1.4cqw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
+          style={{ padding: '0.55cqw 1.3cqw' }}
           initial={{ opacity: 0, scale: 0.85 }}
           animate={
             phase >= 1
@@ -171,13 +171,13 @@ export const Scene16 = () => {
         >
           <motion.div
             className="bg-[#9B8659] rounded-full"
-            style={{ width: '0.65vw', height: '0.65vw' }}
+            style={{ width: '0.65cqw', height: '0.65cqw' }}
             animate={{ scale: [1, 1.6, 1], opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
           />
           <span
             className="font-mono uppercase tracking-[0.4em] text-[#9B8659] font-semibold"
-            style={{ fontSize: '0.9vw' }}
+            style={{ fontSize: '0.9cqw' }}
           >
             Lupa Jurídica · Blindada
           </span>
@@ -186,7 +186,7 @@ export const Scene16 = () => {
         {/* Headline */}
         <h2
           className="font-display font-black text-white leading-[1.02] tracking-tight"
-          style={{ fontSize: '5.4vw' }}
+          style={{ fontSize: '5.4cqw' }}
         >
           <motion.span
             className="block"
@@ -217,7 +217,7 @@ export const Scene16 = () => {
 
         {/* 3 pillar chips: Resume / Prazos / Riscos */}
         <motion.div
-          className="flex items-center justify-center gap-[1.1vw] mt-[1.8vw]"
+          className="flex items-center justify-center gap-[1.1cqw] mt-[1.8cqw]"
           initial={{ opacity: 0 }}
           animate={phase >= 4 ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.4 }}
@@ -225,8 +225,8 @@ export const Scene16 = () => {
           {PILLARS.map((p, i) => (
             <motion.div
               key={p.label}
-              className="flex items-center gap-[0.6vw] rounded-full border border-white/15 bg-[#020617]/70 backdrop-blur-sm"
-              style={{ padding: '0.65vw 1.3vw' }}
+              className="flex items-center gap-[0.6cqw] rounded-full border border-white/15 bg-[#020617]/70 backdrop-blur-sm"
+              style={{ padding: '0.65cqw 1.3cqw' }}
               initial={{ opacity: 0, y: 14, scale: 0.9 }}
               animate={
                 phase >= 4
@@ -242,11 +242,11 @@ export const Scene16 = () => {
               <p.icon
                 className="text-[#9B8659]"
                 strokeWidth={2}
-                style={{ width: '1.15vw', height: '1.15vw' }}
+                style={{ width: '1.15cqw', height: '1.15cqw' }}
               />
               <span
                 className="font-display font-semibold text-white"
-                style={{ fontSize: '1.05vw' }}
+                style={{ fontSize: '1.05cqw' }}
               >
                 {p.label}
               </span>
@@ -256,7 +256,7 @@ export const Scene16 = () => {
 
         {/* Sigilo blindado small line */}
         <motion.div
-          className="inline-flex items-center justify-center gap-[0.55vw] mt-[1.4vw]"
+          className="inline-flex items-center justify-center gap-[0.55cqw] mt-[1.4cqw]"
           initial={{ opacity: 0, y: 10 }}
           animate={phase >= 4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
           transition={{ duration: 0.45, ease: 'circOut' }}
@@ -264,11 +264,11 @@ export const Scene16 = () => {
           <ShieldCheck
             className="text-[#10B981]"
             strokeWidth={2.2}
-            style={{ width: '1vw', height: '1vw' }}
+            style={{ width: '1cqw', height: '1cqw' }}
           />
           <span
             className="font-mono uppercase tracking-[0.3em] text-[#10B981]"
-            style={{ fontSize: '0.78vw' }}
+            style={{ fontSize: '0.78cqw' }}
           >
             Sigilo blindado · ambiente anonimizado
           </span>
@@ -276,8 +276,8 @@ export const Scene16 = () => {
 
         {/* Domain chip */}
         <motion.div
-          className="inline-flex items-center justify-center gap-[1.2vw] mt-[1.8vw] rounded-full border border-[#9B8659]/60 bg-[#9B8659]/15"
-          style={{ padding: '1.1vw 2.4vw' }}
+          className="inline-flex items-center justify-center gap-[1.2cqw] mt-[1.8cqw] rounded-full border border-[#9B8659]/60 bg-[#9B8659]/15"
+          style={{ padding: '1.1cqw 2.4cqw' }}
           initial={{ opacity: 0, scale: 0.9, y: 16 }}
           animate={
             phase >= 4
@@ -296,13 +296,13 @@ export const Scene16 = () => {
         >
           <motion.div
             className="bg-[#9B8659] rounded-full"
-            style={{ width: '0.9vw', height: '0.9vw' }}
+            style={{ width: '0.9cqw', height: '0.9cqw' }}
             animate={{ scale: [1, 1.6, 1], opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
           />
           <span
             className="font-display font-bold text-white uppercase tracking-[0.25em]"
-            style={{ fontSize: '1.3vw' }}
+            style={{ fontSize: '1.3cqw' }}
           >
             advocates.com.br
           </span>
@@ -310,34 +310,34 @@ export const Scene16 = () => {
 
         {/* Footer chips */}
         <motion.div
-          className="flex items-center justify-center gap-[1.4vw] mt-[1.4vw]"
+          className="flex items-center justify-center gap-[1.4cqw] mt-[1.4cqw]"
           initial={{ opacity: 0, y: 12 }}
           animate={phase >= 5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
           transition={{ duration: 0.5, ease: 'circOut' }}
         >
           <span
             className="font-mono text-[#94A3B8] uppercase tracking-[0.25em]"
-            style={{ fontSize: '0.82vw' }}
+            style={{ fontSize: '0.82cqw' }}
           >
             Agente IA embutido
           </span>
           <span
             className="bg-[#9B8659]/60 rounded-full"
-            style={{ width: '0.4vw', height: '0.4vw' }}
+            style={{ width: '0.4cqw', height: '0.4cqw' }}
           />
           <span
             className="font-mono text-[#94A3B8] uppercase tracking-[0.25em]"
-            style={{ fontSize: '0.82vw' }}
+            style={{ fontSize: '0.82cqw' }}
           >
             Leitura acionável
           </span>
           <span
             className="bg-[#9B8659]/60 rounded-full"
-            style={{ width: '0.4vw', height: '0.4vw' }}
+            style={{ width: '0.4cqw', height: '0.4cqw' }}
           />
           <span
             className="font-mono text-[#94A3B8] uppercase tracking-[0.25em]"
-            style={{ fontSize: '0.82vw' }}
+            style={{ fontSize: '0.82cqw' }}
           >
             Sigilo operacional
           </span>

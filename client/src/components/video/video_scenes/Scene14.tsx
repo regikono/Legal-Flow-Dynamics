@@ -43,13 +43,13 @@ export const Scene14 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '60vw',
-          height: '60vw',
+          width: '60cqw',
+          height: '60cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.40) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
-          left: '-15vw',
-          top: '-10vw',
+          left: '-15cqw',
+          top: '-10cqw',
         }}
         animate={{ x: [0, 40, 0], y: [0, 25, 0], scale: [1, 1.12, 1] }}
         transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
@@ -57,13 +57,13 @@ export const Scene14 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '55vw',
-          height: '55vw',
+          width: '55cqw',
+          height: '55cqw',
           background:
             'radial-gradient(circle, rgba(239,68,68,0.18) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(70px)',
-          right: '-15vw',
-          bottom: '-15vw',
+          right: '-15cqw',
+          bottom: '-15cqw',
         }}
         animate={{ x: [0, -30, 0], y: [0, -25, 0], scale: [1, 1.1, 1] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
@@ -73,15 +73,15 @@ export const Scene14 = () => {
 
       {/* Diagonal slash lines */}
       <motion.div
-        className="absolute h-[0.18vw] bg-[#9B8659]/80 origin-left"
-        style={{ width: '70vw', top: '14%', left: '-10%', transform: 'rotate(-6deg)' }}
+        className="absolute h-[0.18cqw] bg-[#9B8659]/80 origin-left"
+        style={{ width: '70cqw', top: '14%', left: '-10%', transform: 'rotate(-6deg)' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 1 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       />
       <motion.div
-        className="absolute h-[0.18vw] bg-[#3B82F6]/80 origin-right"
-        style={{ width: '70vw', bottom: '14%', right: '-10%', transform: 'rotate(-6deg)' }}
+        className="absolute h-[0.18cqw] bg-[#3B82F6]/80 origin-right"
+        style={{ width: '70cqw', bottom: '14%', right: '-10%', transform: 'rotate(-6deg)' }}
         initial={{ scaleX: 0, opacity: 0 }}
         animate={phase >= 1 ? { scaleX: 1, opacity: 1 } : { scaleX: 0, opacity: 0 }}
         transition={{ duration: 0.45, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
@@ -90,17 +90,17 @@ export const Scene14 = () => {
       {/* Floating page tower (visual metaphor for "200 páginas de autos") */}
       <div
         className="absolute pointer-events-none"
-        style={{ left: '8%', top: '50%', transform: 'translateY(-50%)' }}
+        style={{ left: '50%', top: '24%', transform: 'translate(-50%, -50%)' }}
       >
         {PAGES.map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-[0.4vw] border border-[#9B8659]/40 bg-[#020617]/80 backdrop-blur-sm"
+            className="absolute rounded-[1cqw] border border-[#9B8659]/40 bg-[#020617]/80 backdrop-blur-sm"
             style={{
-              width: '8vw',
-              height: '10.5vw',
-              left: `${(i % 4) * 0.5}vw`,
-              top: `${i * -0.55}vw`,
+              width: '20cqw',
+              height: '26cqw',
+              left: `${(i % 4) * 1.2 - 10}cqw`,
+              top: `${i * -1.4}cqw`,
               transform: `rotate(${(i % 2 ? 1 : -1) * (1 + (i % 3))}deg)`,
               boxShadow: '0 4px 14px rgba(0,0,0,0.45)',
             }}
@@ -131,17 +131,17 @@ export const Scene14 = () => {
             }
           >
             {/* Mock lines */}
-            <div className="p-[0.6vw] flex flex-col gap-[0.3vw]">
-              <div className="h-[0.18vw] w-[80%] bg-white/30 rounded-full" />
-              <div className="h-[0.14vw] w-[60%] bg-white/20 rounded-full" />
-              <div className="h-[0.14vw] w-[70%] bg-white/20 rounded-full" />
-              <div className="h-[0.14vw] w-[40%] bg-white/15 rounded-full" />
-              <div className="h-[0.14vw] w-[55%] bg-white/15 rounded-full" />
+            <div className="p-[1.4cqw] flex flex-col gap-[0.8cqw]">
+              <div className="h-[0.45cqw] w-[80%] bg-white/30 rounded-full" />
+              <div className="h-[0.35cqw] w-[60%] bg-white/20 rounded-full" />
+              <div className="h-[0.35cqw] w-[70%] bg-white/20 rounded-full" />
+              <div className="h-[0.35cqw] w-[40%] bg-white/15 rounded-full" />
+              <div className="h-[0.35cqw] w-[55%] bg-white/15 rounded-full" />
             </div>
             <FileText
               className="text-[#9B8659]/70 absolute"
               strokeWidth={1.4}
-              style={{ width: '1.2vw', height: '1.2vw', right: '0.4vw', bottom: '0.4vw' }}
+              style={{ width: '3cqw', height: '3cqw', right: '1cqw', bottom: '1cqw' }}
             />
           </motion.div>
         ))}
@@ -149,7 +149,7 @@ export const Scene14 = () => {
         {/* Page count badge */}
         <motion.div
           className="absolute rounded-full border-2 border-[#EF4444]/80 bg-[#020617]/90 backdrop-blur-md"
-          style={{ left: '6vw', top: '-1vw', padding: '0.6vw 1.2vw' }}
+          style={{ left: '14cqw', top: '-3cqw', padding: '1.2cqw 2.4cqw' }}
           initial={{ opacity: 0, scale: 0.5, rotate: -12 }}
           animate={
             phase >= 2
@@ -168,18 +168,18 @@ export const Scene14 = () => {
         >
           <span
             className="font-mono uppercase tracking-[0.3em] text-[#EF4444] font-bold"
-            style={{ fontSize: '0.85vw' }}
+            style={{ fontSize: '2.2cqw' }}
           >
             +200 páginas
           </span>
         </motion.div>
       </div>
 
-      <div className="relative z-10 w-full text-center px-[4vw]" style={{ paddingLeft: '28vw' }}>
+      <div className="relative z-10 w-full text-center px-[5cqw]" style={{ paddingTop: '46cqh' }}>
         {/* PARE badge */}
         <motion.div
-          className="inline-flex items-center justify-center gap-[1vw] mb-[1.6vw] rounded-full border-2 border-[#9B8659] bg-[#9B8659]/20"
-          style={{ padding: '0.7vw 1.8vw' }}
+          className="inline-flex items-center justify-center gap-[1.6cqw] mb-[3cqw] rounded-full border-2 border-[#9B8659] bg-[#9B8659]/20"
+          style={{ padding: '1.4cqw 3.2cqw' }}
           initial={{ opacity: 0, scale: 0.7, y: -20 }}
           animate={
             phase >= 1
@@ -199,20 +199,20 @@ export const Scene14 = () => {
           <AlertTriangle
             className="text-[#9B8659]"
             strokeWidth={2.5}
-            style={{ width: '1.3vw', height: '1.3vw' }}
+            style={{ width: '3cqw', height: '3cqw' }}
           />
           <span
             className="font-mono uppercase tracking-[0.4em] text-[#9B8659] font-bold"
-            style={{ fontSize: '1vw' }}
+            style={{ fontSize: '2.2cqw' }}
           >
-            PARE — você ainda lê os autos sozinho?
+            PARE — autos sozinho?
           </span>
         </motion.div>
 
         {/* Hook headline */}
         <h1
-          className="font-display font-black text-white leading-[0.95] tracking-tight text-left"
-          style={{ fontSize: '6vw' }}
+          className="font-display font-black text-white leading-[0.95] tracking-tight text-center"
+          style={{ fontSize: '11cqw' }}
         >
           <motion.span
             className="block"
@@ -254,21 +254,21 @@ export const Scene14 = () => {
 
         {/* Sub-line: pivot to the answer */}
         <motion.p
-          className="font-display text-[#94A3B8] mt-[1.6vw] text-left"
-          style={{ fontSize: '1.55vw', maxWidth: '52vw' }}
+          className="font-display text-[#94A3B8] mt-[3.5cqw] text-center mx-auto"
+          style={{ fontSize: '3.2cqw', maxWidth: '88%' }}
           initial={{ opacity: 0, y: 16 }}
           animate={phase >= 5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.5, ease: 'circOut' }}
         >
           E se a IA já estivesse{' '}
           <span className="text-white font-semibold">dentro do processo</span> —
-          pronta para ler, resumir e apontar prazos?
+          pronta para ler e apontar prazos?
         </motion.p>
 
         {/* Tag chip */}
         <motion.div
-          className="inline-flex items-center gap-[0.7vw] mt-[1.6vw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
-          style={{ padding: '0.55vw 1.2vw' }}
+          className="inline-flex items-center gap-[1.4cqw] mt-[3cqw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
+          style={{ padding: '1.2cqw 2.6cqw' }}
           initial={{ opacity: 0, scale: 0.85 }}
           animate={
             phase >= 6
@@ -286,15 +286,15 @@ export const Scene14 = () => {
         >
           <motion.div
             className="bg-[#9B8659] rounded-full"
-            style={{ width: '0.6vw', height: '0.6vw' }}
+            style={{ width: '1.4cqw', height: '1.4cqw' }}
             animate={{ scale: [1, 1.6, 1], opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
           />
           <span
             className="font-mono uppercase tracking-[0.35em] text-[#9B8659] font-semibold"
-            style={{ fontSize: '0.85vw' }}
+            style={{ fontSize: '1.85cqw' }}
           >
-            IA jurídica pronta no produto
+            IA pronta no produto
           </span>
         </motion.div>
       </div>

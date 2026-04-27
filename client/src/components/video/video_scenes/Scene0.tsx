@@ -17,17 +17,17 @@ export const Scene0 = () => {
       <video src={videoBg} autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-[#020617] opacity-80" />
       
-      <div className="relative z-10 mx-auto px-[3vw] text-center" style={{ maxWidth: '90vw' }}>
+      <div className="relative z-10 mx-auto px-[6cqw] text-center" style={{ maxWidth: '92cqw' }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-[3vw] flex justify-center"
+          className="mb-[6cqw] flex justify-center"
         >
-          <img src={logoW} alt="Logo" className="object-contain opacity-50" style={{ height: '4.5vw' }} />
+          <img src={logoW} alt="Logo" className="object-contain opacity-60" style={{ height: '11cqw' }} />
         </motion.div>
         
-        <h1 className="font-display font-bold text-white leading-[1.2]" style={{ fontSize: '5.5vw' }}>
+        <h1 className="font-display font-bold text-white leading-[1.18]" style={{ fontSize: '9cqw' }}>
           {text.map((word, i) => (
             <motion.span
               key={i}
@@ -53,7 +53,7 @@ export const Scene0 = () => {
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ delay: 1.8, duration: 1.5, ease: "easeInOut" }}
-          style={{ height: '0.15vw', marginTop: '3vw' }}
+          style={{ height: '0.4cqw', marginTop: '6cqw' }}
         />
       </div>
     </motion.div>

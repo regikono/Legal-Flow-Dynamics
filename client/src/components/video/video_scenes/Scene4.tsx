@@ -47,8 +47,8 @@ export const Scene4 = () => {
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
               transition={{ duration: 0.22 }}
-              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
-              style={{ fontSize: '7vw' }}
+              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2cqw]"
+              style={{ fontSize: '7cqw' }}
             >
               <span className="text-gradient-blue">{WORDS[0]}</span>
             </motion.h2>
@@ -60,8 +60,8 @@ export const Scene4 = () => {
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
               transition={{ duration: 0.22 }}
-              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
-              style={{ fontSize: '7vw' }}
+              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2cqw]"
+              style={{ fontSize: '7cqw' }}
             >
               <span className="text-gradient-gold">{WORDS[1]}</span>
             </motion.h2>
@@ -73,8 +73,8 @@ export const Scene4 = () => {
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
               transition={{ duration: 0.22 }}
-              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
-              style={{ fontSize: '7vw' }}
+              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2cqw]"
+              style={{ fontSize: '7cqw' }}
             >
               <span className="text-gradient-blue">{WORDS[2]}</span>
             </motion.h2>
@@ -86,8 +86,8 @@ export const Scene4 = () => {
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
               transition={{ duration: 0.22 }}
-              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
-              style={{ fontSize: '7vw' }}
+              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2cqw]"
+              style={{ fontSize: '7cqw' }}
             >
               <span className="text-gradient-gold">{WORDS[3]}</span>
             </motion.h2>
@@ -99,8 +99,8 @@ export const Scene4 = () => {
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
               transition={{ duration: 0.22 }}
-              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
-              style={{ fontSize: '7vw' }}
+              className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2cqw]"
+              style={{ fontSize: '7cqw' }}
             >
               <span className="text-gradient-blue">{WORDS[4]}</span>
             </motion.h2>
@@ -114,8 +114,8 @@ export const Scene4 = () => {
               transition={{ duration: 0.45, type: "spring", bounce: 0.25 }}
               className="absolute inset-0 flex flex-col items-center justify-center bg-[#020617]/95 backdrop-blur-xl"
             >
-              <img src={logoW} alt="Logo" className="object-contain mb-[3vw] drop-shadow-2xl" style={{ height: '10vw' }} />
-              <h3 className="font-display text-[#9B8659] tracking-[0.3em] font-light" style={{ fontSize: '3vw' }}>
+              <img src={logoW} alt="Logo" className="object-contain mb-[3cqw] drop-shadow-2xl" style={{ height: '10cqw' }} />
+              <h3 className="font-display text-[#9B8659] tracking-[0.3em] font-light" style={{ fontSize: '3cqw' }}>
                 FEITO PARA ADVOGADOS
               </h3>
             </motion.div>

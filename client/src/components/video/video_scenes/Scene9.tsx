@@ -75,10 +75,10 @@ export const Scene9 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '50vw',
-          height: '50vw',
-          left: '-12vw',
-          bottom: '-12vw',
+          width: '50cqw',
+          height: '50cqw',
+          left: '-12cqw',
+          bottom: '-12cqw',
           background:
             'radial-gradient(circle, rgba(155,134,89,0.32) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
@@ -89,10 +89,10 @@ export const Scene9 = () => {
       <motion.div
         className="absolute rounded-full"
         style={{
-          width: '45vw',
-          height: '45vw',
-          right: '-10vw',
-          top: '-10vw',
+          width: '45cqw',
+          height: '45cqw',
+          right: '-10cqw',
+          top: '-10cqw',
           background:
             'radial-gradient(circle, rgba(59,130,246,0.30) 0%, rgba(2,6,23,0) 65%)',
           filter: 'blur(60px)',
@@ -103,11 +103,11 @@ export const Scene9 = () => {
 
       <div className="absolute inset-0 tech-grid opacity-40" />
 
-      <div className="relative z-10 w-full grid grid-cols-2 gap-[3vw] items-center px-[5vw]">
-        {/* LEFT: Headline + eyebrow */}
+      <div className="relative z-10 w-full flex flex-col gap-[4cqw] px-[5cqw]">
+        {/* TOP: Headline + eyebrow */}
         <div>
           <motion.div
-            className="flex items-center gap-[1vw] mb-[1.5vw]"
+            className="flex items-center gap-[2cqw] mb-[2.5cqw]"
             initial={{ opacity: 0, x: -20 }}
             animate={phase >= 1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.4, ease: 'circOut' }}
@@ -116,11 +116,11 @@ export const Scene9 = () => {
               src={logoSmall}
               alt="Advocates"
               className="object-contain"
-              style={{ height: '1.8vw', opacity: 0.9 }}
+              style={{ height: '3.6cqw', opacity: 0.9 }}
             />
             <span
               className="font-mono uppercase tracking-[0.3em] text-[#9B8659]"
-              style={{ fontSize: '0.95vw' }}
+              style={{ fontSize: '2.2cqw' }}
             >
               Financeiro inteligente
             </span>
@@ -128,7 +128,7 @@ export const Scene9 = () => {
 
           <h2
             className="font-display font-black text-white leading-[0.98] tracking-tight"
-            style={{ fontSize: '5.5vw' }}
+            style={{ fontSize: '11cqw' }}
           >
             <motion.span
               className="block"
@@ -169,8 +169,8 @@ export const Scene9 = () => {
           </h2>
 
           <motion.p
-            className="font-display text-[#94A3B8] mt-[1.5vw]"
-            style={{ fontSize: '1.4vw', maxWidth: '38vw' }}
+            className="font-display text-[#94A3B8] mt-[3cqw]"
+            style={{ fontSize: '3.2cqw' }}
             initial={{ opacity: 0, y: 14 }}
             animate={phase >= 4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 14 }}
             transition={{ duration: 0.5, ease: 'circOut' }}
@@ -182,8 +182,8 @@ export const Scene9 = () => {
 
           {/* Pulsing badge for "social proof" feel */}
           <motion.div
-            className="inline-flex items-center gap-[0.8vw] mt-[2vw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
-            style={{ padding: '0.7vw 1.4vw' }}
+            className="inline-flex items-center gap-[1.6cqw] mt-[3cqw] rounded-full border border-[#9B8659]/50 bg-[#9B8659]/10"
+            style={{ padding: '1.4cqw 2.8cqw' }}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={
               phase >= 5
@@ -201,28 +201,28 @@ export const Scene9 = () => {
           >
             <motion.div
               className="bg-[#9B8659] rounded-full"
-              style={{ width: '0.7vw', height: '0.7vw' }}
+              style={{ width: '1.5cqw', height: '1.5cqw' }}
               animate={{ scale: [1, 1.6, 1], opacity: [0.6, 1, 0.6] }}
               transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
             />
             <span
               className="font-mono uppercase tracking-[0.3em] text-[#9B8659]"
-              style={{ fontSize: '0.9vw' }}
+              style={{ fontSize: '1.9cqw' }}
             >
-              Pagamentos em grupo · Integração Kanban
+              Pagamentos em grupo · Kanban
             </span>
           </motion.div>
         </div>
 
-        {/* RIGHT: Mock dashboard */}
+        {/* BOTTOM: Mock dashboard */}
         <motion.div
-          className="glow-box rounded-[1.5vw] relative overflow-hidden"
-          style={{ padding: '2vw' }}
-          initial={{ opacity: 0, scale: 0.9, x: 40 }}
+          className="glow-box rounded-[3cqw] relative overflow-hidden"
+          style={{ padding: '4cqw' }}
+          initial={{ opacity: 0, scale: 0.9, y: 40 }}
           animate={
             phase >= 2
-              ? { opacity: 1, scale: 1, x: 0 }
-              : { opacity: 0, scale: 0.9, x: 40 }
+              ? { opacity: 1, scale: 1, y: 0 }
+              : { opacity: 0, scale: 0.9, y: 40 }
           }
           transition={{ type: 'spring', stiffness: 220, damping: 24 }}
         >
@@ -230,10 +230,10 @@ export const Scene9 = () => {
           <motion.div
             className="absolute rounded-full"
             style={{
-              width: '20vw',
-              height: '20vw',
-              top: '-8vw',
-              left: '-6vw',
+              width: '20cqw',
+              height: '20cqw',
+              top: '-8cqw',
+              left: '-6cqw',
               background:
                 'radial-gradient(circle, rgba(59,130,246,0.40) 0%, rgba(0,0,0,0) 70%)',
               filter: 'blur(40px)',
@@ -244,10 +244,10 @@ export const Scene9 = () => {
           <motion.div
             className="absolute rounded-full"
             style={{
-              width: '18vw',
-              height: '18vw',
-              bottom: '-6vw',
-              right: '-5vw',
+              width: '18cqw',
+              height: '18cqw',
+              bottom: '-6cqw',
+              right: '-5cqw',
               background:
                 'radial-gradient(circle, rgba(155,134,89,0.45) 0%, rgba(0,0,0,0) 70%)',
               filter: 'blur(40px)',
@@ -258,28 +258,28 @@ export const Scene9 = () => {
 
           <div className="relative z-10">
             {/* Dashboard header */}
-            <div className="flex items-center justify-between mb-[1.5vw]">
-              <div className="flex items-center gap-[0.6vw]">
-                <BarChart3 className="text-[#9B8659]" strokeWidth={2} style={{ width: '1.2vw', height: '1.2vw' }} />
+            <div className="flex items-center justify-between mb-[1.5cqw]">
+              <div className="flex items-center gap-[0.6cqw]">
+                <BarChart3 className="text-[#9B8659]" strokeWidth={2} style={{ width: '1.2cqw', height: '1.2cqw' }} />
                 <span
                   className="font-mono uppercase tracking-[0.25em] text-white/80"
-                  style={{ fontSize: '0.8vw' }}
+                  style={{ fontSize: '0.8cqw' }}
                 >
                   Dashboard Financeiro
                 </span>
               </div>
               <motion.div
-                className="flex items-center gap-[0.4vw]"
+                className="flex items-center gap-[0.4cqw]"
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
               >
                 <span
                   className="bg-[#10B981] rounded-full"
-                  style={{ width: '0.5vw', height: '0.5vw' }}
+                  style={{ width: '0.5cqw', height: '0.5cqw' }}
                 />
                 <span
                   className="font-mono uppercase tracking-[0.2em] text-[#10B981]"
-                  style={{ fontSize: '0.7vw' }}
+                  style={{ fontSize: '0.7cqw' }}
                 >
                   Em tempo real
                 </span>
@@ -287,12 +287,12 @@ export const Scene9 = () => {
             </div>
 
             {/* KPI cards */}
-            <div className="grid grid-cols-3 gap-[0.8vw] mb-[1.4vw]">
+            <div className="grid grid-cols-3 gap-[0.8cqw] mb-[1.4cqw]">
               {KPI.map((k, i) => (
                 <motion.div
                   key={k.label}
-                  className="rounded-[0.8vw] border border-white/10 bg-[#020617]/60 relative overflow-hidden"
-                  style={{ padding: '1vw' }}
+                  className="rounded-[0.8cqw] border border-white/10 bg-[#020617]/60 relative overflow-hidden"
+                  style={{ padding: '1cqw' }}
                   initial={{ opacity: 0, y: 16 }}
                   animate={
                     phase >= 3
@@ -305,16 +305,16 @@ export const Scene9 = () => {
                     ease: [0.16, 1, 0.3, 1],
                   }}
                 >
-                  <k.icon className="text-[#9B8659] mb-[0.6vw]" strokeWidth={1.8} style={{ width: '1.2vw', height: '1.2vw' }} />
+                  <k.icon className="text-[#9B8659] mb-[0.6cqw]" strokeWidth={1.8} style={{ width: '1.2cqw', height: '1.2cqw' }} />
                   <div
                     className="font-mono uppercase tracking-[0.18em] text-[#94A3B8]"
-                    style={{ fontSize: '0.65vw' }}
+                    style={{ fontSize: '0.65cqw' }}
                   >
                     {k.label}
                   </div>
                   <motion.div
                     className={`font-display font-black ${k.accent}`}
-                    style={{ fontSize: '2vw', lineHeight: 1.1, marginTop: '0.3vw' }}
+                    style={{ fontSize: '2cqw', lineHeight: 1.1, marginTop: '0.3cqw' }}
                     initial={{ scale: 0.85, opacity: 0 }}
                     animate={
                       phase >= 4
@@ -336,20 +336,20 @@ export const Scene9 = () => {
 
             {/* Chart label */}
             <motion.div
-              className="flex items-center justify-between mb-[0.6vw]"
+              className="flex items-center justify-between mb-[0.6cqw]"
               initial={{ opacity: 0 }}
               animate={phase >= 4 ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
               <span
                 className="font-mono uppercase tracking-[0.25em] text-white/70"
-                style={{ fontSize: '0.75vw' }}
+                style={{ fontSize: '0.75cqw' }}
               >
                 Tendência de receita
               </span>
               <span
                 className="font-mono uppercase tracking-[0.25em] text-[#10B981]"
-                style={{ fontSize: '0.75vw' }}
+                style={{ fontSize: '0.75cqw' }}
               >
                 + R$ 220k
               </span>
@@ -357,17 +357,17 @@ export const Scene9 = () => {
 
             {/* Animated bar chart */}
             <div
-              className="rounded-[0.6vw] border border-white/10 bg-[#020617]/60"
-              style={{ padding: '1vw' }}
+              className="rounded-[0.6cqw] border border-white/10 bg-[#020617]/60"
+              style={{ padding: '1cqw' }}
             >
               <div
-                className="flex items-end justify-between gap-[0.6vw]"
-                style={{ height: '7vw' }}
+                className="flex items-end justify-between gap-[0.6cqw]"
+                style={{ height: '7cqw' }}
               >
                 {BARS.map((b, i) => (
                   <div
                     key={b.month}
-                    className="flex-1 flex flex-col items-center gap-[0.4vw]"
+                    className="flex-1 flex flex-col items-center gap-[0.4cqw]"
                     style={{ height: '100%' }}
                   >
                     <div
@@ -375,7 +375,7 @@ export const Scene9 = () => {
                       style={{ height: '100%' }}
                     >
                       <motion.div
-                        className="w-full rounded-t-[0.3vw] origin-bottom"
+                        className="w-full rounded-t-[0.3cqw] origin-bottom"
                         style={{
                           background:
                             i === BARS.length - 1
@@ -400,7 +400,7 @@ export const Scene9 = () => {
                     </div>
                     <span
                       className="font-mono uppercase text-[#94A3B8]"
-                      style={{ fontSize: '0.65vw' }}
+                      style={{ fontSize: '0.65cqw' }}
                     >
                       {b.month}
                     </span>
@@ -411,26 +411,26 @@ export const Scene9 = () => {
 
             {/* Kanban health pill */}
             <motion.div
-              className="flex items-center gap-[0.6vw] mt-[1.2vw]"
+              className="flex items-center gap-[0.6cqw] mt-[1.2cqw]"
               initial={{ opacity: 0, y: 10 }}
               animate={phase >= 6 ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.45, ease: 'circOut' }}
             >
               <span
                 className="rounded-full bg-[#10B981]/15 border border-[#10B981]/40 text-[#10B981] font-mono uppercase tracking-[0.2em]"
-                style={{ fontSize: '0.65vw', padding: '0.3vw 0.7vw' }}
+                style={{ fontSize: '0.65cqw', padding: '0.3cqw 0.7cqw' }}
               >
                 Saúde · OK
               </span>
               <span
                 className="rounded-full bg-[#9B8659]/15 border border-[#9B8659]/40 text-[#9B8659] font-mono uppercase tracking-[0.2em]"
-                style={{ fontSize: '0.65vw', padding: '0.3vw 0.7vw' }}
+                style={{ fontSize: '0.65cqw', padding: '0.3cqw 0.7cqw' }}
               >
                 A receber · 12
               </span>
               <span
                 className="rounded-full bg-[#3B82F6]/15 border border-[#3B82F6]/40 text-[#60A5FA] font-mono uppercase tracking-[0.2em]"
-                style={{ fontSize: '0.65vw', padding: '0.3vw 0.7vw' }}
+                style={{ fontSize: '0.65cqw', padding: '0.3cqw 0.7cqw' }}
               >
                 Kanban · Vinculado
               </span>
