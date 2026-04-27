@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { sceneTransitions } from '@/lib/video/animations';
-import logoSmall from '@assets/logo_small_wl_1777282434450.png';
+import logoSmall from '@assets/logo_w_1777283278719.png';
 
 export const Scene7 = () => {
   const [phase, setPhase] = useState(0);
@@ -126,7 +126,7 @@ export const Scene7 = () => {
             }
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
           >
-            Comece hoje com o
+            Comece hoje como
           </motion.span>
           <motion.span
             className="block"
@@ -138,9 +138,8 @@ export const Scene7 = () => {
             }
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="text-gradient-gold">Associado</span>{' '}
-            <span className="text-white">— </span>
-            <span className="text-gradient-blue">grátis.</span>
+            <span className="text-white">advogado </span>
+            <span className="text-gradient-gold">Associado</span>
           </motion.span>
         </h2>
 

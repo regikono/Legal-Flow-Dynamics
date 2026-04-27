@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { sceneTransitions } from '@/lib/video/animations';
 import videoBg from '../../../assets/video-bg.mp4';
-import logoW from '../../../assets/logo_w_1772286091566.png';
+import logoW from '@assets/logo_w_1777283278719.png';
 
 export const Scene0 = () => {
-  const text = "14 dias para estruturar seu escritório profissionalmente".split(" ");
+  const text = 'Estruture seu escritório profissionalmente com uso contínuo'.split(' ');
   
   return (
     <motion.div 
@@ -37,9 +37,9 @@ export const Scene0 = () => {
               transition={{ delay: 0.5 + i * 0.15, duration: 0.5, type: "spring", stiffness: 200 }}
               style={{ marginRight: '0.3em' }}
             >
-              {word === "14" || word === "dias" ? (
+              {word === 'uso' || word === 'contínuo' ? (
                 <span className="text-gradient-gold">{word}</span>
-              ) : word === "estruturar" ? (
+              ) : word === 'Estruture' ? (
                 <span className="text-gradient-blue">{word}</span>
               ) : (
                 word

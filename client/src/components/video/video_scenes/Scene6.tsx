@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { sceneTransitions } from '@/lib/video/animations';
 import { Check } from 'lucide-react';
-import logoSmall from '@assets/logo_small_wl_1777282434450.png';
+import logoSmall from '@assets/logo_w_1777283278719.png';
 
 const BENEFITS = [
   'Até 5 processos ativos',

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { sceneTransitions } from '@/lib/video/animations';
 import videoBg from '../../../assets/video-bg.mp4';
-import logoW from '../../../assets/logo_w_1772286091566.png';
+import logoW from '@assets/logo_w_1777283278719.png';
 
 const WORDS = [
   "Gestão de Processos",
