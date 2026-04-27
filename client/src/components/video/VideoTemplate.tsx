@@ -33,7 +33,7 @@ export default function VideoTemplate() {
       <div
         className="w-full h-full overflow-hidden relative bg-[#020617]"
       >
-        <AnimatePresence mode="wait">
+        <AnimatePresence initial={false} mode="sync">
           {currentScene === 0 && <Scene0 key="scene0" />}
           {currentScene === 1 && <Scene1 key="scene1" />}
           {currentScene === 2 && <Scene2 key="scene2" />}

@@ -25,10 +25,10 @@ export const easings = {
 // Scene transitions for AnimatePresence
 export const sceneTransitions = {
   fadeBlur: {
-    initial: { opacity: 0, filter: 'blur(20px)' },
-    animate: { opacity: 1, filter: 'blur(0px)' },
-    exit: { opacity: 0, filter: 'blur(20px)' },
-    transition: { duration: 0.8, ease: 'circOut' },
+    initial: { opacity: 0, scale: 0.985 },
+    animate: { opacity: 1, scale: 1 },
+    exit: { opacity: 0, scale: 1.015 },
+    transition: { duration: 0.55, ease: 'circOut' },
   },
   scaleFade: {
     initial: { opacity: 0, scale: 0.95 },
@@ -61,10 +61,10 @@ export const sceneTransitions = {
     transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] },
   },
   zoomThrough: {
-    initial: { opacity: 0, scale: 0.5 },
+    initial: { opacity: 0, scale: 0.88 },
     animate: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 1.5 },
-    transition: { duration: 1, ease: 'circOut' },
+    exit: { opacity: 0, scale: 1.08 },
+    transition: { duration: 0.6, ease: 'circOut' },
   },
   crossDissolve: {
     initial: { opacity: 0 },
@@ -91,10 +91,10 @@ export const sceneTransitions = {
     transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] },
   },
   morphExpand: {
-    initial: { opacity: 0, scale: 0.3, borderRadius: '50%' },
+    initial: { opacity: 0, scale: 0.82, borderRadius: '16%' },
     animate: { opacity: 1, scale: 1, borderRadius: '0%' },
-    exit: { opacity: 0, scale: 2.5, filter: 'blur(30px)' },
-    transition: { duration: 1, ease: [0.16, 1, 0.3, 1] },
+    exit: { opacity: 0, scale: 1.08, borderRadius: '10%' },
+    transition: { duration: 0.65, ease: [0.16, 1, 0.3, 1] },
   },
   splitHorizontal: {
     initial: { clipPath: 'inset(50% 0 50% 0)' },
