@@ -16,13 +16,15 @@ export const Scene4 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    // 5 words + 1 final screen = 6 items. Scene duration is 6500ms.
-    // 6500 / 6 ≈ 1080ms per item. We'll use 900ms to allow time for the final screen to stay.
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => prev + 1);
-    }, 900);
-    
-    return () => clearInterval(interval);
+    const timers = [
+      setTimeout(() => setActiveIndex(1), 900),
+      setTimeout(() => setActiveIndex(2), 1800),
+      setTimeout(() => setActiveIndex(3), 2700),
+      setTimeout(() => setActiveIndex(4), 3600),
+      setTimeout(() => setActiveIndex(5), 4550),
+    ];
+
+    return () => timers.forEach((timer) => clearTimeout(timer));
   }, []);
 
   return (
@@ -37,14 +39,14 @@ export const Scene4 = () => {
       <div className="absolute inset-0 bg-[#041E42]/50 mix-blend-multiply" />
       
       <div className="relative z-10 text-center w-full h-full">
-        <AnimatePresence mode="wait">
+        <AnimatePresence initial={false} mode="sync">
           {activeIndex === 0 && (
             <motion.h2
               key="word0"
               initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.22 }}
               className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
               style={{ fontSize: '7vw' }}
             >
@@ -57,7 +59,7 @@ export const Scene4 = () => {
               initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.22 }}
               className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
               style={{ fontSize: '7vw' }}
             >
@@ -70,7 +72,7 @@ export const Scene4 = () => {
               initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.22 }}
               className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
               style={{ fontSize: '7vw' }}
             >
@@ -83,7 +85,7 @@ export const Scene4 = () => {
               initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.22 }}
               className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
               style={{ fontSize: '7vw' }}
             >
@@ -96,7 +98,7 @@ export const Scene4 = () => {
               initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
               animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               exit={{ opacity: 0, scale: 1.2, filter: "blur(10px)" }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.22 }}
               className="font-display font-black text-white absolute inset-0 flex items-center justify-center uppercase tracking-tighter w-full px-[2vw]"
               style={{ fontSize: '7vw' }}
             >
@@ -109,7 +111,7 @@ export const Scene4 = () => {
               initial={{ opacity: 0, scale: 0.9, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 30 }}
-              transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+              transition={{ duration: 0.45, type: "spring", bounce: 0.25 }}
               className="absolute inset-0 flex flex-col items-center justify-center bg-[#020617]/95 backdrop-blur-xl"
             >
               <img src={logoW} alt="Logo" className="object-contain mb-[3vw] drop-shadow-2xl" style={{ height: '10vw' }} />
