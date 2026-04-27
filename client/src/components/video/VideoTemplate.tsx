@@ -8,6 +8,9 @@ import { Scene4 } from './video_scenes/Scene4';
 import { Scene5 } from './video_scenes/Scene5';
 import { Scene6 } from './video_scenes/Scene6';
 import { Scene7 } from './video_scenes/Scene7';
+import { Scene8 } from './video_scenes/Scene8';
+import { Scene9 } from './video_scenes/Scene9';
+import { Scene10 } from './video_scenes/Scene10';
 
 const SCENE_DURATIONS = {
   scene0: 4500,
@@ -18,6 +21,9 @@ const SCENE_DURATIONS = {
   scene5: 4000,
   scene6: 5000,
   scene7: 5500,
+  scene8: 4500,
+  scene9: 6000,
+  scene10: 5000,
 };
 
 export default function VideoTemplate() {
@@ -42,6 +48,9 @@ export default function VideoTemplate() {
           {currentScene === 5 && <Scene5 key="scene5" />}
           {currentScene === 6 && <Scene6 key="scene6" />}
           {currentScene === 7 && <Scene7 key="scene7" />}
+          {currentScene === 8 && <Scene8 key="scene8" />}
+          {currentScene === 9 && <Scene9 key="scene9" />}
+          {currentScene === 10 && <Scene10 key="scene10" />}
         </AnimatePresence>
       </div>
     </div>
